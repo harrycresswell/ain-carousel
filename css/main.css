@@ -1,0 +1,100 @@
+/*------------------------------------*\
+  #CAROUSEL
+\*------------------------------------*/
+
+/* Position the image container (needed to position the left and right arrows) */
+.Carousel {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Hide the images by default */
+.Carousel-slide {
+  display: none;
+}
+
+.Carousel-video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.Carousel-video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+
+/* Next & previous buttons */
+.Carousel-prev,
+.Carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.Carousel-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.Carousel-prev:hover,
+.Carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.Carousel-slide-number {
+  color: #f2f2f2;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Add a transparency effect for thumnbail images */
+.Carousel-thumb {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.Carousel-active,
+.Carousel-thumb:hover {
+  opacity: 1;
+}
+
+/* Flex grid (remove this when added to style guide) */
+
+.Flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Flex-row .Flex--nr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Flex-column {
+  flex-basis: 100%;
+  flex: 1;
+}

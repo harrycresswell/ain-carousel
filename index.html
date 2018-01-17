@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AIN Carousel</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- Container for the image gallery -->
+<div class="Carousel">
+
+  <!-- Carousel-slide wraps each slide -->
+  <div class="Carousel-slide">
+    <!-- Carousel-slide-number for optional slide numbers -->
+    <div class="Carousel-slide-number">1 / 6</div>
+    <!-- Use .Carousel-video to video <iframe> -->
+    <div class="Carousel-video">
+      <iframe width="100%" height="auto!important" src="https://www.youtube.com/embed/OkQlrIQhUMQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen class="lazyload"></iframe>
+    </div>
+  </div>
+
+  <div class="Carousel-slide">
+    <div class="Carousel-slide-number">2 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%" class="lazyload">
+  </div>
+
+  <div class="Carousel-slide">
+    <div class="Carousel-slide-number">3 / 6</div>
+      <img src="https://searchengineland.com/figz/wp-content/seloads/2015/12/google-amp-fast-speed-travel-ss-1920.jpg" style="width:100%">
+  </div>
+
+  <div class="Carousel-slide">
+    <div class="Carousel-slide-number">4 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%" class="lazyload">
+  </div>
+
+  <div class="Carousel-slide">
+    <div class="Carousel-slide-number">5 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%" class="lazyload">
+  </div>
+
+  <div class="Carousel-slide">
+    <div class="Carousel-slide-number">6 / 6</div>
+      <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%" class="lazyload">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="Carousel-prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="Carousel-next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Thumbnail images -->
+  <div class="Flex-row">
+    <div class="Flex-column">
+      <img class="Carousel-thumb" src="https://www.w3schools.com/howto/img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="Flex-column">
+      <img class="Carousel-thumb" src="https://www.w3schools.com/howto/img_fjords.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="Flex-column">
+      <img class="Carousel-thumb" src="https://www.w3schools.com/howto/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="Flex-column">
+      <img class="Carousel-thumb" src="https://www.w3schools.com/howto/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="Flex-column">
+      <img class="Carousel-thumb" src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="Flex-column">
+      <img class="Carousel-thumb" src="https://www.w3schools.com/howto/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/lazysizes.min.js"></script>
+</body>
+</html>
